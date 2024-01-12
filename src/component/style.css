@@ -1,0 +1,124 @@
+.navbar-wrapper {
+    background: transparent;
+    position: absolute !important;
+    width: 100%;
+    left: 0px;
+    top: 37px;
+    z-index: 1;
+}
+
+.navbar-brand {
+    width: 120px;
+}
+
+.nav-link {
+    padding: 0.5em 1.2em !important;
+}
+.nav-link{
+    position: relative;
+}
+.active > .nav-link::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 2.4em);
+    bottom: 0;
+    left: 50%;
+    background-color: transparent;
+    height: 2px;
+    transform: translate(-50%);
+}
+
+.sale-wrapper {
+    background-color: #b9bca9;
+    color: #212121;
+    text-align: center;
+    font-size: 14px;
+    transition: max-height 1s, opacity .5s, visibility .5s;
+}
+
+.navbar-wrapper:hover {
+    background: white;
+    color: black;
+
+}
+
+.slider-items {
+    width: 450px;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: none;
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: var(--swiper-scrollbar-sides-offset, 15%) !important;
+    bottom: var(--swiper-scrollbar-bottom, 0px) !important;
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size, 4px);
+    width: calc(80% - 2 * var(--swiper-scrollbar-sides-offset, 1%)) !important;
+}
+
+.price {
+    display: block;
+    text-align: left;
+    padding: 6px 0 0;
+    font-size: .875rem;
+}
+
+.was-price {
+    padding: 0rem 0.75rem;
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.gallery__row {
+    height: 400px;
+}
+
+.gallery__item {
+
+    margin: 10px;
+    flex: 1 1 320px;
+    width: 100%;
+    transition: background-color .15s, opacity .7s;
+    overflow: hidden;
+}
+
+.gallery__item_2 {
+    margin: 10px;
+
+    flex: 1 1 320px;
+    width: 100%;
+    transition: background-color .15s, opacity .7s;
+    overflow: hidden;
+}
+.lg-block{
+    display: block;
+}
+.sm-block{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-wrapper {
+        top: 60px;
+    }
+
+    .slider-items {
+        width: 100%;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+       
+        font-size: 25px !important;
+       
+    }
+    .lg-block{
+        display:none;
+    }
+    .sm-block{
+        display: block;
+    }
+}
